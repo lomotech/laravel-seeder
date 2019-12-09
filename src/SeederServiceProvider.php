@@ -19,7 +19,7 @@ use Illuminate\Support\ServiceProvider;
 
 class SeederServiceProvider extends ServiceProvider
 {
-    const SEEDERS_CONFIG_PATH = __DIR__ . '/../../config/seeders.php';
+    const SEEDERS_CONFIG_PATH = __DIR__ . '/../config/seeders.php';
 
     /**
      * Indicates if loading of the provider is deferred.

@@ -7,7 +7,7 @@ use InvalidArgumentException;
 
 class SeederMigrationCreator extends MigrationCreator
 {
-    const STUB_PATH = __DIR__ . '/../../../stubs';
+    const STUB_PATH = __DIR__ . '/../../stubs';
     const STUB_FILE = 'MigratableSeeder.stub';
 
     /**
