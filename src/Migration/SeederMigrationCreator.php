@@ -46,22 +46,6 @@ class SeederMigrationCreator extends MigrationCreator
     }
 
     /**
-     * Ensure that a migration with the given name doesn't already exist.
-     *
-     * @param string $name
-     *
-     * @throws \InvalidArgumentException
-     *
-     * @return void
-     */
-    protected function ensureMigrationDoesntAlreadyExist($name): void
-    {
-        if (class_exists($className = $this->getClassName($name))) {
-            throw new InvalidArgumentException("{$className} already exists.");
-        }
-    }
-
-    /**
      * Populate the place-holders in the migration stub.
      *
      * @param string $name
