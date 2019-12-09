@@ -30,19 +30,19 @@
   },
   "autoload": {
     "psr-4": {
-      "Eighty8\\LaravelSeeder\\": "src/LaravelSeeder"
+      "Lomotech\\LaravelSeeder\\": "src/LaravelSeeder"
     }
   },
   "autoload-dev": {
     "psr-4": {
-      "Eighty8\\LaravelSeeder\\Tests\\": "tests/LaravelSeeder"
+      "Lomotech\\LaravelSeeder\\Tests\\": "tests/LaravelSeeder"
     }
   },
   "prefer-stable": true,
   "extra": {
     "laravel": {
       "providers": [
-        "Eighty8\\LaravelSeeder\\SeederServiceProvider"
+        "Lomotech\\LaravelSeeder\\SeederServiceProvider"
       ]
     }
   }
