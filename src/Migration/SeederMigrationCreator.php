@@ -22,9 +22,9 @@ class SeederMigrationCreator extends MigrationCreator
      *
      * @return string
      */
-    public function create($name, $path, $table = null, $create = false)
+    public function create($name, $path = null, $table = null, $create = false)
     {
-        $this->ensureMigrationDoesntAlreadyExist($name);
+        $this->ensureMigrationDoesntAlreadyExist($name, $path);
         $this->ensurePathExists($path);
 
         // First we will get the stub file for the migration, which serves as a type
