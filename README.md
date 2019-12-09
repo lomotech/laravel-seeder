@@ -14,8 +14,8 @@ All of the functionality you have grown accustomed to with Laravel migrations ha
 Requirements
 ============
 
-- Laravel >= 5.4
-- PHP >= 7.1
+- Laravel >= 6.0
+- PHP >= 7.4
 
 Installation
 ============
