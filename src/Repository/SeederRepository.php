@@ -14,28 +14,28 @@ class SeederRepository implements SeederRepositoryInterface
      *
      * @var string
      */
-    public $environment;
+    public string $environment;
 
     /**
      * The database connection resolver instance.
      *
      * @var ConnectionResolverInterface
      */
-    protected $connectionResolver;
+    protected ConnectionResolverInterface $connectionResolver;
 
     /**
      * The name of the migration table.
      *
      * @var string
      */
-    protected $table;
+    protected string $table;
 
     /**
      * The name of the database connection to use.
      *
      * @var string
      */
-    protected $connection;
+    protected string $connection;
 
     /**
      * Create a new database migration repository instance.
@@ -75,9 +75,9 @@ class SeederRepository implements SeederRepositoryInterface
     /**
      * Resolve the database connection instance.
      *
-     * @return Connection
+     * @return \Illuminate\Database\ConnectionInterface
      */
-    public function getConnection(): Connection
+    public function getConnection(): \Illuminate\Database\ConnectionInterface
     {
         return $this->connectionResolver->connection($this->connection);
     }

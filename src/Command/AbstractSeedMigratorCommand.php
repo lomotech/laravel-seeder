@@ -11,16 +11,16 @@ abstract class AbstractSeedMigratorCommand extends Command
     const ALL_ENVIRONMENTS = 'all';
 
     /** @var string */
-    protected $environment;
+    protected string $environment;
 
     /** @var SeederMigratorInterface */
-    protected $migrator;
+    protected SeederMigratorInterface $migrator;
 
     /** @var array */
-    protected $migrationOptions = [];
+    protected array $migrationOptions = [];
 
     /** @var array */
-    protected $migrationPaths = [];
+    protected array $migrationPaths = [];
 
     /**
      * Constructor.

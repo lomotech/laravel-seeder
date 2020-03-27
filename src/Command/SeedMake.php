@@ -14,14 +14,14 @@ class SeedMake extends MigrateMakeCommand
      *
      * @var string
      */
-    protected $name = 'seed:make';
+    protected string $name = 'seed:make';
 
     /**
      * The console command description.
      *
      * @var string
      */
-    protected $description = 'Create a new migratable seeder class';
+    protected string $description = 'Create a new migratable seeder class';
 
     /**
      * The console command signature.
@@ -34,6 +34,7 @@ class SeedMake extends MigrateMakeCommand
 
     /**
      * Execute the console command.
+     * @throws \Exception
      */
     public function handle(): void
     {
@@ -53,9 +54,10 @@ class SeedMake extends MigrateMakeCommand
      *
      * @param string $model
      * @param string $table
-     * @param bool   $created
+     * @param bool $created
      *
      * @return string
+     * @throws \Exception
      */
     protected function writeMigration($model, $table, $created)
     {

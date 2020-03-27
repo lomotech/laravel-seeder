@@ -14,14 +14,14 @@ class SeedInstall extends Command
      *
      * @var string
      */
-    protected $name = 'seed:install';
+    protected string $name = 'seed:install';
 
     /**
      * The console command description.
      *
      * @var string
      */
-    protected $description = 'Create the seeder repository';
+    protected string $description = 'Create the seeder repository';
 
     /**
      * The repository instance.
